@@ -1,0 +1,288 @@
+    1  sudo gnome-text-editor /etc/dnf/dnf.conf 
+    2  sudo dnf update
+    3  sudo dnf install neofetch
+    4  neofetch
+    5  sudo dnf update
+    6  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    7  dnf check-update
+    8  sudo dnf install code
+    9  cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
+   10  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+   11  dnf check-update
+   12  sudo dnf install code
+   13  htop
+   14  hostory
+   15  history 
+   16  sudo dnf install dnf-plugins-core
+   17  sudo dnf install dnf-plugins-core
+   18  sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+   19  sudo dnf install docker-ce docker-ce-cli containerd.io
+   20  docker --version
+   21  docker info
+   22  docker version
+   23  sudo systemctl start docker
+   24  docker version
+   25  sudo systemctl enable docker
+   26  sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl restart docker
+   27  newgrp docker
+   28  docker version
+   29  sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl restart docker
+   30  sudo newgrp docker
+   31  newgrp docker
+   32  sudo usermod -aG docker $USER
+   33  newgrp docker
+   34  docker info
+   35  docker version
+   36  sudo dnf clean all
+   37  sudo dnf --refresh upgrade
+   38  sudo dnf install gnome-software
+   39  reboot
+   40  sudo nano /etc/dnf/dnf.conf 
+   41  docker-compose --version
+   42  neofetch
+   43  exit
+   44  sudo dnf install docker-compose
+   45  sudo dnf install htop
+   46  htop
+   47  ls
+   48  cd ~
+   49  ls
+   50  mkdir laravel
+   51  cd laravel/
+   52  git --version
+   53  git clone https://github.com/aschmelyun/docker-compose-laravel.git
+   54  cd docker-compose-laravel/
+   55  ls
+   56  cd src/
+   57  ls
+   58  cat README.md 
+   59  cd ..
+   60  ls
+   61  ll
+   62  rm -rf /src/README.md
+   63  ls
+   64  docker-compose up -d --build app.
+   65  docker-compose up -d --build app
+   66  ls
+   67  code .
+   68  ls
+   69  cd src/
+   70  code .
+   71  code
+   72  code .
+   73  pwd
+   74  cd ..
+   75  docker images 
+   76  docker-compose run --rm composer create-project laravel/laravel .
+   77  ls
+   78  cd src/
+   79  ls
+   80  cd ..
+   81  docker-compose app
+   82  docker-compose up
+   83  docker-compose down
+   84  docker images
+   85  docker container ls
+   86  docker system prune -a --volumes
+   87  docker container ls
+   88  docker images
+   89  exit
+   90  ls
+   91  cd laravel/
+   92  ls
+   93  rm -rf docker-compose-laravel/
+   94  curl -s "https://laravel.build/example-app?with=mysql,mailpit" | bash
+   95  cd example-app/
+   96  nano ~/.bashrc 
+   97  mkdir -p ~/.bashrc.d && touch $_/aliases
+   98  nano ~/.bashrs.d
+   99  nano ~/.bash_aliases
+  100  sail up
+  101  cd laravel/example-app/
+  102  sail up
+  103  ./vendor/bin/sail up
+  104  code .
+  105  cd ~
+  106  sudo nano ~/.bash_aliases 
+  107  cd laravel/example-app/
+  108  sail stopp
+  109  sail stop
+  110  ./vendor/bin/sail stop
+  111  docker images
+  112  ps a
+  113  sail up
+  114  nano ~/.bashrc 
+  115  cd ~
+  116  nano ~/.bashrc 
+  117  nano ~/.bashrc.d/
+  118  ll
+  119  la
+  120  ls -la
+  121  cd ~/.bashrc.d/
+  122  ls
+  123  nano aliases 
+  124  cd laravel/example-app/
+  125  sail up
+  126  exit
+  127  cd ~
+  128  ls -la
+  129  rm -rf .bash_aliases 
+  130  exit
+  131  ls
+  132  cd ..
+  133  sail shell
+  134  sail stop
+  135  docker container ls
+  136  docker images 
+  137  exit
+  138  cd laravel/example-app/
+  139  sail up
+  140  exit
+  141  cd ..
+  142  cd example-app/
+  143  sail up
+  144  sail composer require realrashid/sweet-alert
+  145  sail up -d
+  146  sail composer require realrashid/sweet-alert
+  147  sail artisan sweetalert:publish
+  148  sail composer dump-autoload
+  149  sail stop
+  150  docker images 
+  151  docker container ls
+  152  exit
+  153  cd laravel/example-app/
+  154  sail up
+  155  sail up -d
+  156  sail artisan make:component ButtonCreate
+  157  sail artisan make:component ButtonDelete
+  158  sail artisan make:component ButtonEdit
+  159  sail stop
+  160  exit
+  161  cd ~
+  162  gnome-software
+  163     $ gnome-software --verbose
+  164  gnome-software --verbose
+  165  systemctl status PackageKit.service
+  166  sudo systemctl status PackageKit.service
+  167  rm -rf ~/.cache/gnome-software
+  168  killall gnome-software
+  169  pkmon
+  170  cd laravel/example-app/
+  171  sail up -d
+  172  sail artisan make:component ButtonModal
+  173  sail artisan make:component Card
+  174  sail artisan make:component CardForm
+  175  sail artisan make:component Input
+  176  sail artisan make:component InputSearch
+  177  sail artisan make:component Modal
+  178  sail artisan make:component Select
+  179  sail artisan make:component Textarea
+  180  sail artisan make:component Uploadfile
+  181  sail artisan make:component Landing/CartForm
+  182  sail artisan make:component Landing/CartTable
+  183  sail artisan make:component Landing/CourseItem
+  184  sail artisan make:component Landing/HeroSection
+  185  sail artisan make:component Landing/SearchSection
+  186  sail composer require spatie/laravel-permission
+  187  sail artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+  188  sail artisan optimize:clear
+  189  sail artisan config:clear
+  190  sail artisan make:model Category -m
+  191  sail artisan make:model Course -m
+  192  sail artisan make:model Video -m
+  193  sail artisan make:model Transaction -m
+  194  saill artisan make:model TransactionDetail -m
+  195  sail artisan make:model TransactionDetail -m
+  196  sail artisan make:model Cart -m
+  197  sail artisan make:model Showcase -m
+  198  sail artisan make:model Review -m
+  199  sail stop
+  200  poweroff
+  201  cd laravel/example-app/
+  202  sail up -d
+  203  sail shell
+  204  sail mysql
+  205  exit
+  206  cd laravel/example-app/
+  207  sail stop
+  208  exit
+  209  cd laravel/example-app/
+  210  sail up -d
+  211  sail artisan make:seeder RoleSeeder
+  212  sail artisan make:seed UserSeeder
+  213  sail artisan migrate
+  214  sail artisan migrate:seed --fresh
+  215  sail artisan migrate:fresh --seed
+  216  mysql
+  217  sail mysql
+  218  sail stop
+  219  sail up -d
+  220  sail artisan make:controller Admin/DashboardController -i
+  221  sail artisan r:l --name=dashboard
+  222  sail stop
+  223  sail up -d
+  224  sail npm run dev
+  225  sail stop
+  226  exit
+  227  cd laravel/example-app/
+  228  sail up -d
+  229  ls
+  230  vi --version
+  231  sail stop
+  232  mv ~/.config/nvim ~/.config/nvim.bak
+  233  mv ~/.local/share/nvim ~/.local/share/nvim.bak
+  234  cd ~
+  235  mv ~/.config/nvim ~/.config/nvim.bak
+  236  sudo dnf install -y neovim python3-neovim
+  237  sudo dnf update
+  238  sudo dnf install -y neovim python3-neovim
+  239  dnf copr enable agriffis/neovim-nightly
+  240  suso dnf copr enable agriffis/neovim-nightly
+  241  sudo dnf copr enable agriffis/neovim-nightly
+  242  sudo dnf install -y neovim python3-neovim
+  243  mv ~/.config/nvim ~/.config/nvim.bak
+  244  mv ~/.local/share/nvim ~/.local/share/nvim.bak
+  245  nvim
+  246  git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+  247  nvim +PackerSync
+  248  ll
+  249  cd laravel/example-app/
+  250  nvim .
+  251  which noevim
+  252  sudo dnf remove neovim
+  253  sudo dnf autoremove
+  254  neofetch
+  255  cd laravel/example-app/
+  256  sail up -d
+  257  sail artisan make:request CategoryRequest
+  258  sail artisan make:controller Admin/CategoryController -r
+  259  sail stop
+  260  powerof
+  261  poweroff
+  262  nvim
+  263  sudo dnf update
+  264  cd laravel/example-app/
+  265  sail up -d
+  266  sail artisan route:cache
+  267  sail artisan route:list
+  268  sail artisan storage:link
+  269  sail artisan make:request CourseRequest
+  270  sail artisan make:controller Admin/CourseController -r
+  271  sail artisan route:list
+  272  cd laravel/example-app/
+  273  sail stop
+  274  exit
+  275  sudo dnf update
+  276  sudo dnf --help
+  277  sudo dnf history
+  278  vim --version
+  279  cd laravel/example-app/
+  280  sail up -d
+  281  cd ~
+  282  dnf check-update
+  283  sudo dnf install code
+  284  cd laravel/example-app/
+  285  sail up -d
+  286  sail stop
+  287  history
+  288  history >> history1.txt
